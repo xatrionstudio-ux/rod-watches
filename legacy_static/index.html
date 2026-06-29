@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rod Watches & Jewelry | Buy, Sell & Trade Luxury Timepieces</title>
+  <meta name="description" content="Premier dealer for buying, selling, and trading authentic luxury watches and custom made jewelry. Over 20 years of experience with Rolex, Patek Philippe, Richard Mille, Audemars Piguet, and Cartier.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css?v=5000">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span data-i18n="announcement_text"><i class="fa-solid fa-shield-halved"></i> 100% Authentic Luxury Timepieces | Over 20 Years of Experience</span>
+      <div class="announcement-links">
+        <span data-i18n="announcement_payout"><i class="fa-solid fa-bolt"></i> Same-Day Immediate Payout</span>
+        <a href="https://wa.me/19177631282" target="_blank" class="wa-quick-link"><i class="fa-brands fa-whatsapp"></i> VIP Support: +1 (917) 763-1282</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-title">ROD</span>
+        <span class="logo-subtitle">WATCHES & JEWELRY</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="#catalogo" class="nav-link" data-i18n="nav_catalog">Catalog</a>
+        <a href="#jewelry" class="nav-link" data-i18n="nav_jewelry">Custom Jewelry</a>
+        <a href="#vender" class="nav-link highlight-link" data-i18n="nav_sell">Sell / Trade</a>
+        <a href="#proceso" class="nav-link" data-i18n="nav_process">Process</a>
+        <a href="#nosotros" class="nav-link" data-i18n="nav_guarantee">Guarantee</a>
+        <a href="#resenas" class="nav-link" data-i18n="nav_reviews">Reviews</a>
+        <a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switcher Button -->
+        <button class="lang-toggle-btn" id="langToggleBtn" title="Change Language / Cambiar Idioma">
+          <i class="fa-solid fa-globe"></i> <span id="currentLangLabel">ES</span>
+        </button>
+        <button class="icon-btn" id="searchToggleBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="#vender" class="btn btn-gold-outline header-cta" data-i18n="btn_quote">Quote Watch</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+
+    <!-- Search Bar Dropdown -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="container search-container">
+        <input type="text" id="catalogSearchInput" placeholder="Search by brand, model or reference (e.g. Rolex Daytona, Nautilus, RM 11-03...)...">
+        <button id="closeSearchBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="inicio">
+    <video class="hero-video" autoplay loop muted playsinline poster="assets/images/daytona.png">
+      <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge"><i class="fa-solid fa-crown"></i> <span data-i18n="hero_badge">Over 20 Years of Experience</span></div>
+      <h1 class="hero-title" data-i18n="hero_title">Sell • Buy • Authentic Luxury Timepieces</h1>
+      <p class="hero-subtitle-tag" data-i18n="hero_subtitle_tag">⌚️⏱ • Custom Made Jewelry 💎⚜️</p>
+      <p class="hero-description" data-i18n="hero_desc">Curated collection of new & pre-owned luxury watches. Specialists in Rolex, Patek Philippe, Richard Mille, Audemars Piguet, Cartier, and bespoke iced-out jewelry with lifetime authenticity guarantee.</p>
+      <div class="hero-buttons">
+        <a href="#catalogo" class="btn btn-gold"><i class="fa-solid fa-gem"></i> <span data-i18n="hero_btn_catalog">Explore Catalog</span></a>
+        <a href="#vender" class="btn btn-glass"><i class="fa-solid fa-hand-holding-dollar"></i> <span data-i18n="hero_btn_offer">Get Cash Offer</span></a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">20+</span>
+          <span class="stat-label" data-i18n="stat_years">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label" data-i18n="stat_auth">Authenticity Guaranteed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">24h</span>
+          <span class="stat-label" data-i18n="stat_payout">Immediate Payment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges Bar -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-card">
+        <i class="fa-solid fa-certificate"></i>
+        <div>
+          <h3 data-i18n="trust_1_title">Certified Authenticity</h3>
+          <p data-i18n="trust_1_desc">Rigorous 30-point mechanical and aesthetic inspection by master watchmakers.</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <div>
+          <h3 data-i18n="trust_2_title">Insured Express Shipping</h3>
+          <p data-i18n="trust_2_desc">Worldwide fully insured armored courier dispatch with 100% coverage.</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <i class="fa-solid fa-money-bill-transfer"></i>
+        <div>
+          <h3 data-i18n="trust_3_title">Immediate Purchase Offers</h3>
+          <p data-i18n="trust_3_desc">Direct wire transfer or instant cash payout on the same day for your piece.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Made Jewelry Showcase Section -->
+  <section class="jewelry-section" id="jewelry">
+    <div class="container jewelry-grid">
+      <div class="jewelry-content">
+        <span class="section-tag"><i class="fa-solid fa-gem"></i> Custom Made Jewelry 💎⚜️</span>
+        <h2 class="section-title" data-i18n="jewelry_title">Bespoke Diamond & Gold Creations</h2>
+        <p data-i18n="jewelry_desc_1">Elevate your personal style with our handcrafted custom jewelry service. With over 20 years of artisan mastery, we design and forge exclusive diamond Cuban links, bustdown luxury watches, custom pendants, and engagement rings.</p>
+        <p data-i18n="jewelry_desc_2">Using only VVS natural diamonds and 18k solid gold, every creation is tailored precisely to your vision with certified gemological appraisal.</p>
+        
+        <div class="jewelry-features">
+          <div class="j-feat">
+            <i class="fa-solid fa-crown"></i>
+            <div>
+              <h4 data-i18n="j_feat_1_title">VVS Quality Diamonds</h4>
+              <p data-i18n="j_feat_1_desc">Hand-selected flawless diamonds with maximum brilliance.</p>
+            </div>
+          </div>
+          <div class="j-feat">
+            <i class="fa-solid fa-drafting-compass"></i>
+            <div>
+              <h4 data-i18n="j_feat_2_title">Custom 3D Design</h4>
+              <p data-i18n="j_feat_2_desc">CAD preview of your piece before forging into solid 18k gold.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/19177631282?text=Hello%20Rod%20Watches,%20I%20am%20interested%20in%20a%20Custom%20Made%20Jewelry%20piece." target="_blank" class="btn btn-gold margin-top-lg">
+          <i class="fa-brands fa-whatsapp"></i> <span data-i18n="jewelry_btn">Order Custom Piece</span>
+        </a>
+      </div>
+
+      <div class="jewelry-image-card">
+        <img src="assets/images/custom_jewelry.png" alt="Custom Made Jewelry Diamond Set Rod Watches">
+        <div class="jewelry-badge">💎 Bespoke Craftsmanship</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-Step Trade & Sell Process Section -->
+  <section class="process-section" id="proceso">
+    <div class="container text-center">
+      <span class="section-tag" data-i18n="process_tag">Seamless Experience</span>
+      <h2 class="section-title" data-i18n="process_title">How to Buy, Sell or Trade in 3 Steps</h2>
+      <p class="section-desc" data-i18n="process_desc">At Rod Watches & Jewelry we make buying or selling your high-end timepiece smooth, transparent, and completely confidential.</p>
+      
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-step-num">01</div>
+          <i class="fa-solid fa-calculator process-icon"></i>
+          <h3 data-i18n="p1_title">Request Your Quote</h3>
+          <p data-i18n="p1_desc">Submit your watch brand, reference, and photos via our online valuation wizard or direct WhatsApp chat.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step-num">02</div>
+          <i class="fa-solid fa-magnifying-glass-chart process-icon"></i>
+          <h3 data-i18n="p2_title">Professional Inspection</h3>
+          <p data-i18n="p2_desc">We inspect your timepiece physically at our private VIP showroom or via fully insured armored courier.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step-num">03</div>
+          <i class="fa-solid fa-wallet process-icon"></i>
+          <h3 data-i18n="p3_title">Immediate Payout or Trade</h3>
+          <p data-i18n="p3_desc">Receive instant wire transfer or cash payout on the same day, or apply trade value toward another timepiece.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sell / Trade Section (Valuation Engine) -->
+  <section class="sell-section" id="vender">
+    <div class="container">
+      <div class="sell-wrapper">
+        <div class="sell-info">
+          <span class="section-tag" data-i18n="sell_tag">Looking to Sell or Trade?</span>
+          <h2 class="section-title" data-i18n="sell_title">We Buy Your Luxury Watch at Top Market Price</h2>
+          <p class="sell-description" data-i18n="sell_desc">At <strong>Rod Watches & Jewelry</strong> we respect your time and value your collection. Get a free, instant professional appraisal with zero obligation.</p>
+
+          <ul class="sell-benefits">
+            <li><i class="fa-solid fa-circle-check"></i> <strong data-i18n="sb1_title">Same-Day Payment:</strong> Direct wire transfer or instant cash immediately after verification.</li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong data-i18n="sb2_title">Trade-In Service:</strong> Trade your current watch toward upgrading to any piece in our inventory.</li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong data-i18n="sb3_title">VIP Consignment:</strong> We showcase your watch to our global private collector network for peak returns.</li>
+          </ul>
+        </div>
+
+        <!-- Single Web Valuation Form (WatchGuys Professional Form Style) -->
+        <div class="appraisal-card">
+          <div class="appraisal-header">
+            <h3><i class="fa-solid fa-file-signature"></i> <span data-i18n="form_header">Valuation Request Form</span></h3>
+            <p data-i18n="form_subheader">Fill in your timepiece details for a confidential quote from our specialists</p>
+          </div>
+
+          <form id="appraisalForm" class="valuation-form">
+            <div class="form-group-grid">
+              <div>
+                <label for="watchBrand" data-i18n="lbl_brand">Watch Brand</label>
+                <select id="watchBrand" required class="form-input">
+                  <option value="" data-i18n="opt_select_brand">Select brand...</option>
+                  <option value="Rolex">Rolex</option>
+                  <option value="Patek Philippe">Patek Philippe</option>
+                  <option value="Richard Mille">Richard Mille</option>
+                  <option value="Audemars Piguet">Audemars Piguet</option>
+                  <option value="Cartier">Cartier</option>
+                  <option value="Omega">Omega</option>
+                  <option value="Jewelry">Custom Jewelry 💎</option>
+                  <option value="Other">Other Luxury Brand</option>
+                </select>
+              </div>
+              <div>
+                <label for="watchModel" data-i18n="lbl_model">Model & Reference</label>
+                <input type="text" id="watchModel" placeholder="e.g. Submariner 126610LN, RM 11-03..." required class="form-input">
+              </div>
+            </div>
+
+            <div class="form-group-grid">
+              <div>
+                <label for="watchCondition" data-i18n="lbl_cond">Condition</label>
+                <select id="watchCondition" class="form-input">
+                  <option value="Unworn / Mint" data-i18n="opt_cond_mint">Unworn / Mint (Brand New)</option>
+                  <option value="Excellent" data-i18n="opt_cond_exc">Excellent (Light use)</option>
+                  <option value="Pre-Owned" data-i18n="opt_cond_used">Pre-Owned (Normal wear)</option>
+                </select>
+              </div>
+              <div>
+                <label data-i18n="lbl_acc">Accessories Included</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-card">
+                    <input type="checkbox" id="hasBox" checked>
+                    <span><i class="fa-solid fa-box"></i> <span data-i18n="chk_box">Box</span></span>
+                  </label>
+                  <label class="checkbox-card">
+                    <input type="checkbox" id="hasPapers" checked>
+                    <span><i class="fa-solid fa-file-contract"></i> <span data-i18n="chk_papers">Papers</span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group-grid">
+              <div>
+                <label for="clientName" data-i18n="lbl_name">Your Full Name</label>
+                <input type="text" id="clientName" placeholder="e.g. Michael Vance" required class="form-input">
+              </div>
+              <div>
+                <label for="clientPhone" data-i18n="lbl_phone">Phone / WhatsApp</label>
+                <input type="tel" id="clientPhone" placeholder="+1 (555) 000-0000" required class="form-input">
+              </div>
+            </div>
+
+            <label for="clientNotes" data-i18n="lbl_notes">Additional Details / Desired Price (Optional)</label>
+            <textarea id="clientNotes" rows="3" placeholder="e.g. Year 2023, full set, asking for fast cash payout..." class="form-input form-textarea"></textarea>
+
+            <button type="submit" class="btn btn-gold btn-block margin-top-sm"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_send_wa">Submit Valuation to WhatsApp</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands Strip -->
+  <section class="brands-strip">
+    <div class="container">
+      <p class="section-subtitle center" data-i18n="brands_title">Featured Luxury Brands & Categories</p>
+      <div class="brands-grid">
+        <button class="brand-chip active" data-brand="all" data-i18n="brand_all">All Pieces (30)</button>
+        <button class="brand-chip" data-brand="Rolex">Rolex</button>
+        <button class="brand-chip" data-brand="Patek Philippe">Patek Philippe</button>
+        <button class="brand-chip" data-brand="Richard Mille">Richard Mille</button>
+        <button class="brand-chip" data-brand="Audemars Piguet">Audemars Piguet</button>
+        <button class="brand-chip" data-brand="Cartier">Cartier</button>
+        <button class="brand-chip" data-brand="Hublot">Hublot</button>
+        <button class="brand-chip" data-brand="Omega">Omega</button>
+        <button class="brand-chip" data-brand="Jewelry">Custom Jewelry 💎</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Section -->
+  <section class="catalog-section" id="catalogo">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-tag" data-i18n="cat_tag">Exclusive Inventory</span>
+          <h2 class="section-title" data-i18n="cat_title">Available Luxury Timepieces</h2>
+        </div>
+        <div class="catalog-controls">
+          <select id="sortSelect" class="custom-select">
+            <option value="default" data-i18n="sort_featured">Sort by: Featured</option>
+            <option value="price-asc" data-i18n="sort_price_asc">Price: Low to High</option>
+            <option value="price-desc" data-i18n="sort_price_desc">Price: High to Low</option>
+            <option value="name-asc" data-i18n="sort_name">Model: A-Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Injected dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee & Experience Section -->
+  <section class="about-section" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-image-card">
+        <div class="image-wrapper">
+          <img src="assets/images/daytona.png" alt="Showroom Rod Watches">
+        </div>
+        <div class="experience-badge">
+          <span class="exp-years">20+</span>
+          <span class="exp-text" data-i18n="badge_exp">Years of Industry Leadership</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-tag" data-i18n="ab_tag">Why Choose Rod Watches</span>
+        <h2 class="section-title" data-i18n="ab_title">Unrivaled Expertise & Absolute Trust</h2>
+        <p data-i18n="ab_p1">With over 20 years of experience in ultra-high-end watchmaking and fine custom jewelry, <strong>Rod Watches & Jewelry</strong> stands as a premier destination for discerning collectors worldwide.</p>
+        <p data-i18n="ab_p2">Inspired by top global dealer standards, every timepiece entering our vault undergoes comprehensive mechanical testing, serial verification, and timing calibration to ensure 100% peace of mind.</p>
+        
+        <div class="about-features">
+          <div class="feat-item">
+            <i class="fa-solid fa-user-shield"></i>
+            <div>
+              <h4 data-i18n="ab_f1_title">Private Concierge Service</h4>
+              <p data-i18n="ab_f1_desc">Tailored consultations in our private security showroom by appointment.</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <div>
+              <h4 data-i18n="ab_f2_title">Peak Market Valuations</h4>
+              <p data-i18n="ab_f2_desc">Continuous live market tracking to ensure transparent buying and selling prices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews & Testimonials Section -->
+  <section class="reviews-section" id="resenas">
+    <div class="container text-center">
+      <span class="section-tag"><i class="fa-solid fa-star gold-star"></i> <span data-i18n="rev_tag">Verified Reputation</span></span>
+      <h2 class="section-title" data-i18n="rev_title">What Our VIP Clients Say</h2>
+      <p class="section-desc" data-i18n="rev_desc">Real experiences from collectors, sellers, and jewelry clients worldwide.</p>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text" data-i18n="rev1_text">"Sold my Richard Mille RM 11-03 within 24 hours. The valuation was spot-on with top market price and wire transfer was immediate. Incredible professionalism."</p>
+          <div class="review-author">
+            <strong>Alexander M.</strong>
+            <span data-i18n="rev1_role">Verified Seller</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text" data-i18n="rev2_text">"Acquired my Patek Philippe Nautilus with full box and papers. The private showroom experience was discrete and world-class."</p>
+          <div class="review-author">
+            <strong>Sterling R.</strong>
+            <span data-i18n="rev2_role">VIP Buyer</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text" data-i18n="rev3_text">"Ordered a custom diamond Cuban link chain. 20+ years of craftsmanship really shows. Flawless VVS diamonds and heavy 18k solid gold!"</p>
+          <div class="review-author">
+            <strong>Marcus V.</strong>
+            <span data-i18n="rev3_role">Custom Jewelry Client</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag" data-i18n="faq_tag">Frequently Asked Questions</span>
+        <h2 class="section-title" data-i18n="faq_title">Everything You Need to Know</h2>
+        <p class="section-desc" data-i18n="faq_desc">Clear answers regarding authenticity guarantees, payments, shipping, and custom jewelry orders.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq1_q">How do you guarantee timepiece authenticity?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq1_a">Every timepiece undergoes a comprehensive 30-point mechanical and physical inspection by certified master watchmakers. We inspect movement components, serial laser engravings, dial printing, hands, and case proportions. All items come backed by a lifetime authenticity money-back guarantee.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq2_q">How does payment work when I sell my watch?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq2_a">Once your watch is verified in person at our private showroom or via fully insured armored shipping, we execute an instant wire transfer or immediate cash payment on the exact same day before final handover.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq3_q">How do Custom Made Jewelry orders work?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq3_a">We start with a consultation to capture your exact design idea. Our master jewelers create a 3D CAD render for your approval. Once confirmed, we forge the piece in solid 18k gold and hand-set certified natural VVS diamonds.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq4_q">Where is your showroom located?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq4_a">We operate out of high-security private showrooms. To ensure maximum confidentiality and safety for our clientele, all showroom visits are strictly scheduled by advance appointment via WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <footer class="main-footer" id="contacto">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="brand-logo">
+          <span class="logo-title">ROD</span>
+          <span class="logo-subtitle">WATCHES & JEWELRY</span>
+        </div>
+        <p data-i18n="foot_desc">Your trusted dealer for buying, selling, and trading luxury watches and custom diamond jewelry. Over 20 years of excellence.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/rod_watches_jewerly/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/19177631282" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="foot_nav">Navigation</h4>
+        <ul>
+          <li><a href="#inicio" data-i18n="nav_home">Home</a></li>
+          <li><a href="#catalogo" data-i18n="nav_catalog">Catalog</a></li>
+          <li><a href="#jewelry" data-i18n="nav_jewelry">Custom Jewelry</a></li>
+          <li><a href="#vender" data-i18n="nav_sell">Sell / Trade</a></li>
+          <li><a href="#nosotros" data-i18n="nav_guarantee">Guarantee</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="foot_brands">Key Brands</h4>
+        <ul>
+          <li><a href="#catalogo">Rolex</a></li>
+          <li><a href="#catalogo">Patek Philippe</a></li>
+          <li><a href="#catalogo">Richard Mille</a></li>
+          <li><a href="#catalogo">Audemars Piguet</a></li>
+          <li><a href="#catalogo">Cartier</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="foot_contact">Contact & VIP Service</h4>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-location-dot"></i> <span data-i18n="ci_loc">Private Showroom (By Appointment)</span></li>
+          <li><i class="fa-brands fa-whatsapp"></i> +1 (917) 763-1282</li>
+          <li><i class="fa-solid fa-envelope"></i> contact@rodwatches.com</li>
+          <li><i class="fa-solid fa-clock"></i> <span data-i18n="ci_hours">Mon - Sat: 10:00 AM - 7:00 PM</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container copyright-content">
+        <p>&copy; 2026 Rod Watches & Jewelry. All rights reserved. Not affiliated directly with mentioned brands.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/19177631282?text=Hello%20Rod%20Watches,%20I%20would%20like%20information%20about%20your%20luxury%20timepieces%20and%20custom%20jewelry." target="_blank" class="floating-wa" aria-label="WhatsApp Contact">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Product Detail Quick View Modal -->
+  <div class="modal-backdrop" id="productModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModalBtn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body" id="modalBody">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js?v=5000"></script>
+</body>
+</html>
